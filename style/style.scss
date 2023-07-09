@@ -1,0 +1,623 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  background: rgba(255, 255, 255, 1);
+  align-items: center;
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    .nav {
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0px;
+
+      .logo {
+        font-size: 24px;
+        line-height: 30.24px;
+
+        a {
+          font-size: 24px;
+          color: rgba(7, 33, 37, 1);
+          font-family: "Plus Jakarta Sans", sans-serif;
+          font-weight: 700;
+        }
+      }
+
+      .menu {
+        a {
+          font-size: 16;
+          line-height: 150%;
+          margin-left: 32px;
+          color: rgba(7, 33, 37, 1);
+          font-family: "Plus Jakarta Sans", sans-serif;
+          font-weight: 400;
+        }
+      }
+
+      .login {
+        a {
+          font-size: 16;
+          line-height: 150%;
+          margin-left: 32px;
+          color: rgba(7, 33, 37, 1);
+          padding: 10px 16px;
+          font-family: "Plus Jakarta Sans", sans-serif;
+          font-weight: 400;
+        }
+        .signup {
+          background-color: rgba(184, 228, 218, 1);
+          padding: 10px 16px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+
+//herosection
+
+.herosection-main {
+  .container {
+    .herosection {
+      width: 100%;
+      height: 825px;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      .herosection-left {
+        padding: 15% 0%;
+        background-color: white;
+        .herosection-left-top {
+          .birinci-p {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: normal;
+            font-family: "Plus Jakarta Sans", sans-serif;
+          }
+          .ikinci-p {
+            font-family: Plus Jakarta Sans;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+          }
+          .ucuncu-p {
+            font-family: Plus Jakarta Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+          }
+        }
+        .herosection-left-bottom {
+          .signup-button {
+            padding: 16px 36px;
+            background-color: rgba(32, 72, 79, 1);
+            border-radius: 8px;
+            color: rgba(255, 255, 255, 1);
+            gap: 10px;
+            margin-right: 15px;
+            border: 1px solid transparent;
+          }
+          .learn-button {
+            padding: 16px 36px;
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 8px;
+            color: rgba(7, 33, 37, 1);
+            gap: 10px;
+            border: 1px solid rgb(240, 237, 237);
+          }
+        }
+      }
+      .herosection-right {
+        width: 541px;
+        height: 820px;
+        .herosection-right-top {
+          width: 389px;
+          height: 107px;
+          box-shadow: 0px 4px 40px 0px rgba(138, 138, 138, 0.846);
+          border-radius: 12px;
+          background-color: rgba(255, 255, 255, 1);
+          background-color: #f8f9fa;
+          position: absolute;
+          top: 15%;
+          right: 0px;
+          justify-content: space-around;
+          align-items: center;
+          .avatar {
+            border: 4px solid rgba(184, 228, 218, 1);
+            border-radius: 35px;
+          }
+          .avatar-title {
+            .bashliq {
+              font-family: Plus Jakarta Sans;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+            p {
+              font-family: Plus Jakarta Sans;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+            }
+          }
+        }
+        .herosection-right-center {
+          width: 415px;
+          height: 490px;
+          margin-top: 18%;
+          margin-left: 10%;
+        }
+        .herosection-right-bottom {
+          width: 432px;
+          height: 193px;
+          border-radius: 12px;
+          box-shadow: 0px 4px 40px 0px rgba(138, 138, 138, 0.823);
+          position: absolute;
+          right: 15%;
+          bottom: 20%;
+          background-color: #f8f9fa;
+          justify-content: space-around;
+          .herosection-right-icon {
+            width: 64px;
+            height: 64px;
+            background-color: rgba(220, 242, 237, 1);
+            border-radius: 35px;
+            text-align: center;
+            margin-top: 25px;
+            img {
+              position: absolute;
+              top: 20%;
+              left: 7%;
+            }
+          }
+          .fake-button {
+            width: 70%;
+            padding: 20px 0px;
+            position: relative;
+            p {
+              font-family: Plus Jakarta Sans;
+              font-size: 24px;
+              font-weight: 700;
+              line-height: normal;
+            }
+            button {
+              width: 110px;
+              height: 37px;
+              border-radius: 8px;
+              background-color: rgba(220, 242, 237, 1);
+              border: 1px solid rgba(220, 242, 237, 1);
+              position: absolute;
+              bottom: 15px;
+              left: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//featureBlocks
+
+.feature-Blocks {
+  justify-content: space-between;
+  margin-top: 5rem;
+
+  .left-Block {
+    position: relative;
+    .box-icon {
+      margin-top: 5xp;
+      width: 39.15px;
+      height: 39.15px;
+      flex-shrink: 0;
+      border-radius: 35px;
+      background: var(--primary-light, #dcf2ed);
+      text-align: center;
+      img {
+        margin-top: 2px;
+      }
+    }
+    .project-status {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 264.26px;
+      height: 94.204px;
+      flex-shrink: 0;
+      border-radius: 7.341px;
+      background: var(--white, #fff);
+      box-shadow: 0px 2.4468495845794678px 24.468496322631836px 0px
+        rgba(138, 138, 138, 0.744);
+      padding: 17px;
+      .content {
+        margin-left: 11px;
+        h2 {
+          color: var(--dark-green, #20484f);
+          font-family: Plus Jakarta Sans;
+          font-size: 14.681px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          display: flex;
+          width: 121.119px;
+          height: 18.351px;
+          flex-direction: column;
+          flex-shrink: 0;
+        }
+        img {
+          width: 166.997px;
+          height: 6.729px;
+          flex-shrink: 0;
+        }
+        :last-child {
+          width: 111.332px;
+          height: 6.729px;
+          flex-shrink: 0;
+        }
+      }
+    }
+    .overview {
+      padding: 17px 22px;
+      position: absolute;
+      left: -66px;
+      bottom: 105px;
+      width: 210px;
+      height: 285.895px;
+      flex-shrink: 0;
+      border-radius: 8.842px;
+      background: var(--white, #fff);
+      box-shadow: 0px 2.9473683834075928px 29.473684310913086px 0px
+        rgba(138, 138, 138, 0.792);
+      .top {
+        h2 {
+          color: var(--dark-green, #20484f);
+          font-family: Plus Jakarta Sans;
+          font-size: 17.684px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          display: flex;
+          width: 150.316px;
+          height: 22.105px;
+          flex-direction: column;
+          flex-shrink: 0;
+        }
+        p {
+          color: var(--dark-green, #20484f);
+          font-family: Plus Jakarta Sans;
+          font-size: 13.263px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          display: flex;
+          width: 58.211px;
+          height: 16.947px;
+          flex-direction: column;
+          flex-shrink: 0;
+        }
+      }
+      .box-icon {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+        img {
+          width: 10px;
+          height: 10px;
+          flex-shrink: 0;
+          margin-top: -22px !important;
+        }
+      }
+      ul {
+        padding: 0;
+        li {
+          align-items: center;
+          span {
+            img {
+              width: 58.947px;
+              height: 8.105px;
+              flex-shrink: 0;
+            }
+          }
+        }
+      }
+      button {
+        border-radius: 5.895px;
+        background: var(--primary-green, #b8e4da);
+        width: 168.737px;
+        height: 27.263px;
+        flex-shrink: 0;
+        border: none;
+      }
+    }
+  }
+  .right-Block {
+    width: 497px;
+    .top {
+      .main-title {
+        color: var(--dark, #072125);
+        font-family: Plus Jakarta Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 20px;
+      }
+    }
+    .description {
+      color: var(--dark, #072125);
+
+      font-family: Plus Jakarta Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+    .bottom {
+      margin-top: 44px;
+    }
+    .box {
+      margin-bottom: 26px;
+      .box-icon {
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        background: var(--primary-light, #dcf2ed);
+        text-align: center;
+        img {
+          margin-top: 5px;
+        }
+      }
+      .box-text {
+        margin-left: 26px;
+      }
+    }
+  }
+}
+.metrics {
+  justify-content: space-between;
+
+  margin-top: 8rem;
+  .text {
+    width: 50%;
+    h2 {
+      color: var(--dark, #072125);
+      font-family: Plus Jakarta Sans;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      display: flex;
+      width: 528px;
+      flex-direction: column;
+      flex-shrink: 0;
+    }
+    p {
+      color: var(--dark, #072125);
+      font-family: Plus Jakarta Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      display: flex;
+      width: 495px;
+      flex-direction: column;
+      flex-shrink: 0;
+    }
+    button {
+      color: var(--white, #fff);
+      font-family: Plus Jakarta Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      border-radius: 8px;
+      background: var(--dark-green, #20484f);
+      display: inline-flex;
+      padding: 16px 36px 15px 36px;
+      align-items: flex-start;
+      gap: 10px;
+      margin-top: 80px;
+    }
+  }
+  .content {
+    width: 40%;
+    margin-left: 116px;
+    justify-content: space-between;
+    .box {
+      width: 45%;
+      margin: 0 0px 60px 0;
+      h1 {
+        color: var(--dark-green, #20484f);
+        font-family: Plus Jakarta Sans;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+      }
+      h5 {
+        color: var(--dark, #072125);
+        font-family: Plus Jakarta Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      p {
+        display: flex;
+        width: 216px;
+        flex-direction: column;
+        flex-shrink: 0;
+        color: var(--dark, #072125);
+        font-family: Plus Jakarta Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+      }
+    }
+  }
+}
+.testimonials {
+  height: 505px;
+  width: 100%;
+  align-items: center;
+  margin-top: 8rem;
+  .text {
+    width: 50%;
+    margin-left: 60px;
+    img {
+      width: 41px;
+      height: 33px;
+      flex-shrink: 0;
+    }
+    h3 {
+      color: var(--dark, #072125);
+      font-family: Plus Jakarta Sans;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      display: flex;
+      width: 525px;
+      flex-direction: column;
+      flex-shrink: 0;
+      margin-top: 53px;
+    }
+    h5 {
+      color: var(--dark, #072125);
+      font-family: Plus Jakarta Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-top: 70px;
+    }
+    p {
+      color: var(--dark, #072125);
+      font-family: Plus Jakarta Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      display: flex;
+      width: 216px;
+      flex-direction: column;
+      flex-shrink: 0;
+      margin-top: 12px;
+    }
+  }
+  .img {
+    width: 50%;
+  }
+}
+.ctas {
+  height: 418px;
+  text-align: center;
+  padding: 68px 0;
+  margin-top: 8rem;
+  p {
+    color: var(--dark-green, #20484f);
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 28px;
+  }
+  h1 {
+    color: var(--dark, #072125);
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 0 200px;
+    margin-bottom: 54px;
+  }
+  button {
+    border-radius: 8px;
+    background: var(--dark-green, #20484f);
+    color: #fff;
+    display: inline-flex;
+    padding: 16px 36px 15px 36px;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+.images {
+  height: 764px;
+  margin-top: 8rem;
+  .text {
+    width: 495px;
+    margin: auto;
+    h2 {
+      color: var(--dark, #072125);
+      text-align: center;
+      font-family: Plus Jakarta Sans;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      margin-bottom: 20px;
+    }
+    p {
+      color: var(--dark, #072125);
+      text-align: center;
+      font-family: Plus Jakarta Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+    }
+  }
+  .photos{
+    margin-top: 20px;
+    position: relative;
+    .img1{
+      position: absolute;
+      top: 0px;
+      left: -100px;
+    }
+    .img2{
+      position: absolute;
+      top:80px ;
+      left:300px ;
+    }
+    .img3{
+      position: absolute;
+      top:0px ;
+      right: 290px;
+    }
+    .img4{
+      position: absolute;
+      top:80px ;
+      right:-100px ;
+    }
+
+  }
+}
