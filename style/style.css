@@ -942,6 +942,9 @@ header .container .nav .login .signup {
   color: #fff;
 }
 
+footer .footer {
+  margin-top: 8rem;
+}
 footer .footer .left h3 {
   color: #20484f;
   font-family: Plus Jakarta Sans;
@@ -949,6 +952,7 @@ footer .footer .left h3 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 50px;
 }
 footer .footer .left p {
   color: var(--dark-green, #20484f);
@@ -965,6 +969,7 @@ footer .footer .right h5 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 30px;
 }
 footer .footer .right p {
   color: var(--dark-green, #20484f);
@@ -973,6 +978,12 @@ footer .footer .right p {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+footer .footer .right .footer-text {
+  margin-left: 80px;
+}
+footer .bottom img {
+  width: 100%;
 }
 footer .bottom p {
   color: var(--dark-green, #20484f);
