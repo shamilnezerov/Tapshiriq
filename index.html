@@ -18,6 +18,13 @@
       href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -39,14 +46,17 @@
             <a class="signup" href="">Sign up</a>
             <a href="">Log In</a>
           </div>
+          <div class="mobilmenu">
+            <button><i class="fa-solid fa-bars"></i></button>
+           </div>
         </div>
       </div>
     </header>
 
     <div class="herosection-main">
       <div class="container">
-        <div class="herosection">
-          <div class="herosection-left">
+        <div class="herosection row">
+          <div class="herosection-left col-12 col-lg-6  ">
             <div class="herosection-left-top">
               <p class="birinci-p">The new way to work online</p>
 
@@ -68,7 +78,7 @@
             </div>
           </div>
 
-          <div class="herosection-right">
+          <div class="herosection-right col-12 col-lg-6">
             <div class="herosection-right-top d-flex">
               <div class="avatar">
                 <img src="./img/Hero Sections/Avatar.png" alt="" />
@@ -89,8 +99,8 @@
               </div>
               <div class="fake-button">
                 <p>Project Updated</p>
-                <img src="./icons/Hero Sections/Mockup Text (1).png" alt="" />
-                <img src="./icons/Hero Sections/Mockup Text.png" alt="" />
+                <img class="line1" src="./icons/Hero Sections/Mockup Text (1).png" alt="" />
+                <img class="line2" src="./icons/Hero Sections/Mockup Text.png" alt="" />
                 <button></button>
               </div>
             </div>
@@ -101,9 +111,9 @@
 
     <div class="feature-Blocks-Main">
       <div class="container">
-        <div class="feature-Blocks d-flex">
-          <div class="left-Block">
-            <div>
+        <div class="feature-Blocks d-flex row">
+          <div class="left-Block col-12 col-lg-6">
+            <div class="img-feature">
               <img src="./img/Feature Blocks/Image.png" alt="" />
             </div>
             <div class="project-status d-flex">
@@ -170,7 +180,7 @@
               </div>
             </div>
           </div>
-          <div class="right-Block">
+          <div class="right-Block col-12 col-lg-6">
             <div class="top">
               <h4 class="main-title">
                 The source of truth for all of your product decisions
@@ -215,8 +225,8 @@
     </div>
     <div class="metrics-main">
       <div class="container">
-        <div class="metrics d-flex">
-          <div class="text">
+        <div class="metrics d-flex row">
+          <div class="text col-12 col-lg-6">
             <h2 style="margin-bottom: 26px">
               When we get to work we really make things happen fast and
               powerfully
@@ -227,7 +237,7 @@
             </p>
             <button>Singn up</button>
           </div>
-          <div class="content d-flex flex-wrap">
+          <div class="content d-flex flex-wrap col-12 col-lg-6">
             <div class="box">
               <h1>35</h1>
               <h5>Cups of coffee</h5>
@@ -283,7 +293,7 @@
     </div>
     <div class="images-main">
       <div class="container">
-        <div class="images">
+        <div class="images ">
           <div class="text text-center">
             <h2>Work shouldn’t be boring</h2>
             <p>
@@ -291,7 +301,7 @@
               dance until the sun comes I want to fight your cousin.
             </p>
           </div>
-          <div class="photos d-flex">
+          <div class="photos d-flex ">
             <div class="img1">
               <img src="./img/Images/Image1.png" alt="" />
             </div>
@@ -310,22 +320,22 @@
     </div>
     <div class="tabs-main">
       <div class="container">
-        <div class="tabs">
-          <div class="top d-flex">
-            <div class="text">
+        <div class="tabs ">
+          <div class="top d-flex row">
+            <div class="text col-12 col-lg-6">
               <h2>How the product works1</h2>
               <p>
                 I want to fly like an angel flare on a ten feet snare I want to
                 dance until the sun comes up I want to fight your cousin.
               </p>
             </div>
-            <div class="button">
+            <div class="button col-12 col-lg-6">
               <button>Start your trial</button>
             </div>
           </div>
           <img class="line" src="./img/Tabs/Divider.png" alt="" />
-          <div class="bottom d-flex">
-            <div class="left">
+          <div class="bottom d-flex row">
+            <div class="left col-12 col-lg-6">
               <div class="tabs-box1">
                 <h5>Visually plot your roadmap</h5>
                 <p>With our intuitive layout</p>
@@ -343,7 +353,7 @@
                 <p>Not just tickets</p>
               </div>
             </div>
-            <div class="right">
+            <div class="right col-12 col-lg-6">
               <img src="./img/Tabs/UI Mockup.png" alt="" />
               <div class="text1">
                 <p>new feature added</p>
@@ -394,8 +404,8 @@
               dance until the sun comes I want to fight your cousin.
             </p>
           </div>
-          <div class="bottom">
-            <div class="img-box-top d-flex">
+          <div class="bottom ">
+            <div class="img-box-top d-flex ">
               <div class="img-box">
                 <img src="./img/Team/Image1.png" alt="" />
                 <h4>Andy Howson</h4>
@@ -616,39 +626,39 @@
     <div class="footers-main">
       <div class="container">
         <footer>
-         <div class="footer d-flex justify-content-between">
-          <div class="left">
-            <h3>Quickly.</h3>
-            <p>32  - 44 Upper Rupert Street</p>
-            <p>W12 8DY Kensington</p>
-            <p>United Kingdom</p>
-          </div>
-          <div class="right d-flex">
-            <div class="footer-text">
-              <h5>United Kingdom</h5>
-              <p>Our Team</p>
-              <p>Company Vision</p>
-              <p>Our History</p>
-              <p>Investorys</p>
+          <div class="footer d-flex justify-content-between">
+            <div class="left">
+              <h3>Quickly.</h3>
+              <p>32 - 44 Upper Rupert Street</p>
+              <p>W12 8DY Kensington</p>
+              <p>United Kingdom</p>
             </div>
-            <div class="footer-text">
-              <h5>Our Resources</h5>
-              <p>The Blog</p>
-              <p>DownloadsChange Log</p>
-              <p>Change Log</p>
-              <p>Downloads</p>
+            <div class="right d-flex">
+              <div class="footer-text">
+                <h5>United Kingdom</h5>
+                <p>Our Team</p>
+                <p>Company Vision</p>
+                <p>Our History</p>
+                <p>Investorys</p>
+              </div>
+              <div class="footer-text">
+                <h5>Our Resources</h5>
+                <p>The Blog</p>
+                <p>DownloadsChange Log</p>
+                <p>Change Log</p>
+                <p>Downloads</p>
+              </div>
+              <div class="footer-text">
+                <h5>Our Product</h5>
+                <p>New Features</p>
+                <p>Roadmap</p>
+                <p>Product Demo</p>
+                <p>Pricing</p>
+              </div>
             </div>
-            <div class="footer-text">
-              <h5>Our Product</h5>
-              <p>New Features</p>
-              <p>Roadmap</p>
-              <p>Product Demo</p>
-              <p>Pricing</p>
-            </div>
-         </div>
           </div>
           <div class="bottom text-center">
-            <img src="./icons/Footers/Divider.png" alt="">
+            <img src="./icons/Footers/Divider.png" alt="" />
             <p>Copyright 2022 Quickly LTD</p>
           </div>
         </footer>
