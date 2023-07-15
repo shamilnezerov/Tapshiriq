@@ -9,7 +9,6 @@
 @media (max-width: 600px) {
   body {
     width: 100%;
-    overflow-x: hidden;
   }
   body h1,
   body h2,
@@ -20,6 +19,77 @@
   }
 }
 
+.container {
+  overflow-x: hidden !important;
+}
+
+@media (max-width: 600px) {
+  .mobil-menu {
+    background-color: #b8e4da;
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: -80%;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  .mobil-menu .mobil-logo {
+    margin-bottom: 20%;
+  }
+  .mobil-menu .mobil-logo h4 {
+    font-size: 32px;
+    margin: 10%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+  }
+  .mobil-menu .mobil-menu-item ul li {
+    font-size: 24px;
+    color: rgb(7, 33, 37);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    line-height: 300%;
+  }
+  .mobil-menu .mobil-menu-login {
+    position: absolute;
+    bottom: 4%;
+    width: 100%;
+    margin-left: 10%;
+  }
+  .mobil-menu .mobil-menu-login a {
+    text-decoration: none;
+  }
+  .mobil-menu .mobil-menu-login .signup {
+    background-color: rgb(32, 72, 79);
+    text-align: center;
+    width: 35%;
+    padding: 11px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .mobil-menu .mobil-menu-login .signup a {
+    color: #ffffff;
+  }
+  .mobil-menu .mobil-menu-login .logIn {
+    text-align: center;
+    background-color: rgb(32, 72, 79);
+    margin-left: 10%;
+    width: 35%;
+    padding: 11px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .mobil-menu .mobil-menu-login .logIn a {
+    color: #ffffff;
+  }
+}
+@media (min-width: 600px) {
+  .mobil-menu {
+    display: none;
+  }
+}
 header {
   width: 100%;
   height: 75px;
@@ -29,55 +99,55 @@ header {
 header a {
   text-decoration: none;
 }
-header .container .nav {
+header .nav {
   width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 14px 0px;
 }
-@media (max-width: 767px) {
-  header .container .nav .menu {
+@media (max-width: 600px) {
+  header .nav .menu {
     display: none;
   }
-  header .container .nav .login {
+  header .nav .login {
     display: none;
   }
-  header .container .nav .mobilmenu {
+  header .nav .burgermenu {
     position: absolute;
     right: 5%;
   }
-  header .container .nav .mobilmenu button {
+  header .nav .burgermenu button {
     background-color: transparent;
     border: none;
   }
-  header .container .nav .mobilmenu button i {
+  header .nav .burgermenu button i {
     font-size: 30px;
   }
-  header .container .nav .logo h4 {
+  header .nav .logo h4 {
     font-weight: bold;
   }
 }
 @media (min-width: 600px) {
-  header .container .nav .mobilmenu {
+  header .nav .burgermenu {
     display: none;
   }
 }
-header .container .nav .logo {
+header .nav .logo {
   font-size: 24px;
   line-height: 30.24px;
 }
-header .container .nav .logo a {
+header .nav .logo a {
   font-size: 24px;
   color: rgb(7, 33, 37);
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
 }
 @media (max-width: 600px) {
-  header .container .nav .logo a h4 {
+  header .nav .logo a h4 {
     font-size: 28px;
   }
 }
-header .container .nav .menu a {
+header .nav .menu a {
   font-size: 16;
   line-height: 150%;
   margin-left: 32px;
@@ -85,14 +155,14 @@ header .container .nav .menu a {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
 }
-header .container .nav .login a {
+header .nav .login a {
   font-size: 16;
   line-height: 150%;
   color: rgb(7, 33, 37);
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
 }
-header .container .nav .login .logIn {
+header .nav .login .logIn {
   background-color: #ffffff;
   padding: 10px 16px;
   border-radius: 8px;
@@ -100,25 +170,25 @@ header .container .nav .login .logIn {
   cursor: pointer;
   transition: 0.3s;
 }
-header .container .nav .login .signup {
+header .nav .login .signup {
   background-color: rgb(184, 228, 218);
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
 }
-header .container .nav .login .signup:hover {
+header .nav .login .signup:hover {
   color: #fff;
   background-color: #20484f;
 }
-header .container .nav .login .logIn:hover {
+header .nav .login .logIn:hover {
   background-color: #20484f;
   color: #ffffff;
 }
 
 .herosection-main .container .herosection {
   width: 100%;
-  height: 825px;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   position: relative;
@@ -240,7 +310,6 @@ header .container .nav .login .logIn:hover {
     height: 14%;
     top: 10%;
     right: 0%;
-    z-index: 1;
   }
 }
 .herosection-main .container .herosection .herosection-right .herosection-right-top .avatar {
@@ -302,11 +371,10 @@ header .container .nav .login .logIn:hover {
 }
 @media (max-width: 600px) {
   .herosection-main .container .herosection .herosection-right .herosection-right-center {
-    position: absolute;
     left: 15%;
     width: 75%;
     height: 100%;
-    margin: 10% 0 0 0;
+    margin: 10% 0 0 15%;
   }
   .herosection-main .container .herosection .herosection-right .herosection-right-center img {
     width: 100%;

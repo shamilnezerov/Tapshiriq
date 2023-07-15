@@ -27,6 +27,31 @@
     />
   </head>
   <body>
+    <div class="mobil-menu " id="mobile">
+      <div class="mobil-logo">
+        <h4>Quickly.</h4>
+      </div>
+
+      <div class="mobil-menu-item">
+        <ul>
+          <li><a href=""></a>About us</li>
+          <li><a href=""></a>Products</li>
+          <li><a href=""></a>Features</li>
+          <li><a href=""></a>Our Blog</li>
+          <li><a href=""></a>Downloads</li>
+        </ul>
+      </div>
+      <div class="mobil-menu-login d-flex">
+        <div class="signup">
+          <a class="signup-mobil" href="">Sign up</a>
+        </div>
+        <div class="logIn">
+          <a class="logIn-mobil" href="">Log In</a>
+        </div>
+        
+        
+      </div>
+    </div>
     <header>
       <div class="container">
         <div class="nav">
@@ -46,8 +71,8 @@
             <a class="signup" href="">Sign up</a>
             <a class="logIn" href="">Log In</a>
           </div>
-          <div class="mobilmenu">
-            <button><i class="fa-solid fa-bars"></i></button>
+          <div class="burgermenu">
+            <button onclick="mobilemenu()"><i class="fa-solid fa-bars"></i></button>
           </div>
         </div>
       </div>
@@ -274,7 +299,7 @@
       <div class="container">
         <div class="testimonials d-flex">
           <div class="text">
-            <img src="./icons/Testimonials/“.png" alt="" />
+            <img src="./icons/Testimonials/a.png" alt="" />
             <h3>
               This is the best product we used for our work and we can’t thank
               you enough
@@ -686,5 +711,6 @@
         </footer>
       </div>
     </div>
+    <script src="/js/app.js"></script>
   </body>
 </html>
