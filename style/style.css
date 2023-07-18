@@ -6,6 +6,17 @@
   list-style-type: none;
 }
 
+body #scroll-icon {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 20px;
+  background-color: #20484f;
+  color: #ffffff;
+  border-radius: 18px;
+  cursor: pointer;
+  z-index: 1;
+}
 @media (max-width: 600px) {
   body {
     width: 100%;
@@ -30,20 +41,18 @@
     background-color: #b8e4da;
     width: 80%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0%;
     left: -80%;
     z-index: 1;
     transition: 0.5s;
   }
-  .mobil-menu .mobil-logo {
-    margin-bottom: 20%;
+  .mobil-menu .mobil-menu-item {
+    margin-top: 30%;
   }
-  .mobil-menu .mobil-logo h4 {
-    font-size: 32px;
-    margin: 10%;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 700;
+  .mobil-menu .mobil-menu-item ul {
+    margin-left: 6%;
+    padding: 0;
   }
   .mobil-menu .mobil-menu-item ul li {
     font-size: 24px;
@@ -92,111 +101,107 @@
     display: none;
   }
 }
-header {
+#header {
   width: 100%;
-  height: 75px;
-  background: rgb(255, 255, 255);
+  padding: 6px 0;
+  background-color: transparent;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  z-index: 1;
+  transition: 0.3s;
+  z-index: 2;
 }
 @media (max-width: 600px) {
-  header {
-    background-color: #b8e4da;
-    height: 66px;
-    position: fixed;
+  #header {
+    background-color: transparent;
+    position: sticky;
     top: 0;
-    left: 0;
     z-index: 1;
   }
 }
-header a {
+#header a {
   text-decoration: none;
 }
-header .nav {
+#header .nav {
   width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 14px 0px;
 }
 @media (max-width: 600px) {
-  header .nav {
+  #header .nav {
     width: 100%;
   }
-  header .nav .menu {
+  #header .nav .menu {
     display: none;
   }
-  header .nav .login {
+  #header .nav .login {
     display: none;
   }
-  header .nav .burgermenu button {
+  #header .nav .burgermenu button {
     background-color: transparent;
     border: none;
   }
-  header .nav .burgermenu button i {
+  #header .nav .burgermenu button i {
     font-size: 30px;
   }
-  header .nav .logo h4 {
+  #header .nav .logo h4 {
     font-weight: bold;
   }
 }
 @media (min-width: 600px) {
-  header .nav .burgermenu {
+  #header .nav .burgermenu {
     display: none;
   }
 }
-header .nav .logo {
-  font-size: 24px;
-  line-height: 30.24px;
-}
-header .nav .logo a {
-  font-size: 24px;
-  color: rgb(7, 33, 37);
+#header .nav .logo a {
+  font-size: 2px;
+  color: black;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
 }
 @media (max-width: 600px) {
-  header .nav .logo a h4 {
+  #header .nav .logo a h4 {
     font-size: 28px;
   }
 }
-header .nav .menu a {
+#header .nav .menu a {
   font-size: 16;
   line-height: 150%;
   margin-left: 32px;
-  color: rgb(7, 33, 37);
+  color: black;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
 }
-header .nav .login a {
+#header .nav .login a {
   font-size: 16;
   line-height: 150%;
-  color: rgb(7, 33, 37);
+  color: black;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
 }
-header .nav .login .logIn {
+#header .nav .login .logIn {
   background-color: #ffffff;
+  border: 1px solid #20484f;
   padding: 10px 16px;
   border-radius: 8px;
   margin-left: 32px;
   cursor: pointer;
   transition: 0.3s;
 }
-header .nav .login .signup {
-  background-color: #dcf2ed;
+#header .nav .login .signup {
+  background-color: #fff;
+  border: 1px solid #20484f;
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
 }
-header .nav .login .signup:hover {
+#header .nav .login .signup:hover {
   color: #fff;
   background-color: #20484f;
 }
-header .nav .login .logIn:hover {
+#header .nav .login .logIn:hover {
   background-color: #20484f;
   color: #ffffff;
 }
@@ -206,12 +211,11 @@ header .nav .login .logIn:hover {
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 @media (max-width: 600px) {
   .herosection-main .container .herosection {
     margin: auto;
-    margin-top: 4rem;
   }
 }
 .herosection-main .container .herosection .herosection-left {
@@ -287,7 +291,7 @@ header .nav .login .logIn:hover {
 }
 @media (max-width: 600px) {
   .herosection-main .container .herosection .herosection-left .herosection-left-bottom {
-    margin: 0 15%;
+    text-align: center;
     width: 100%;
   }
   .herosection-main .container .herosection .herosection-left .herosection-left-bottom .signup-button {
@@ -398,8 +402,8 @@ header .nav .login .logIn:hover {
   border-radius: 12px;
   box-shadow: 0px 4px 40px 0px rgba(138, 138, 138, 0.823);
   position: absolute;
-  right: 28%;
-  bottom: 12%;
+  right: 34%;
+  bottom: 15%;
   transition: 0.3s;
   background-color: #f8f9fa;
   justify-content: space-around;
